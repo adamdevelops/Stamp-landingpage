@@ -1,0 +1,137 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+body{
+  height: 100vh;
+  margin-bottom: 10px;
+  background: url("../img/splashscreen.jpg") no-repeat center center;
+  background-size: cover;
+  display: fixed;
+  flex-direction: column;
+  color: white;
+}
+
+header{
+  margin-bottom: 100px;
+  font-family: Roboto;
+}
+
+h1{
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.top-menu{
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: green;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.content-container{
+  padding: 0px, auto;
+  position: absolute;
+  float: center;
+  text-align: center;
+}
+
+.content{
+  float: left;
+  width: 300px;
+  height:200px;
+  display: inline-block;
+
+}
+
+.signup{
+  float: right;
+  width: 300px;
+  height:200px;
+  display: inline-block;
+}
+
+form {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 22px;
+}
+
+
+
+input[type="text"]
+{
+    background: transparent;
+    border: 1px solid grey;
+}
+
+button{
+  background: transparent;
+  background-color: transparent;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding-right: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   display:inline-block;
+}
+
+.copyright{
+  position: absolute;
+  float:left;
+  padding-left: 20px;
+}
+
+.bottom-menu{
+  padding-right: 20px;
+}
+
+.bottom-menu a{
+  text-decoration: none;
+  color: white;
+  float: right;
+  padding: 15px;
+}

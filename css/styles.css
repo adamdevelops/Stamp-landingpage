@@ -1,10 +1,11 @@
-html,body
-{
+html,body{
     width: 100%;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
     overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Roboto;
 }
 
 body{
@@ -19,12 +20,22 @@ body{
 
 header{
   margin-bottom: 100px;
-  font-family: Roboto;
 }
 
 h1{
-  font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+h4{
+  letter-spacing: 2px;
+  text-align: center;
+  padding-right: 50px;
 }
 
 
@@ -49,7 +60,7 @@ h1{
 
 .top-menu a {
   text-decoration: none;
-  color: green;
+  color: white;
   padding: 20px;
   font-size: 1.5em;
 }
@@ -64,35 +75,42 @@ h1{
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: white;
   margin: 6px 0;
+  border-radius: 4px;
   transition: 0.4s;
 }
 
 
 .content-container{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   margin-top: 10%;
 }
 
 .content{
-  width: 300px;
+  width: 400px;
   height:200px;
-  border: 1px green solid;
+  /* border: 1px green solid; */
   padding-left: 10%;
 }
 
 .signup{
-  width: 300px;
+  width: 400px;
   height:200px;
-  border: 1px yellow solid;
+  /* border: 1px yellow solid; */
   padding-right: 10%;
+}
+
+.signup-terms{
+  font-size: .8rem;
+  text-decoration: none;
+  color: white;
+  padding-left: 60px;
 }
 
 form {
   position: relative;
   width: 250px;
-  margin: 0 auto;
   padding: 20px 22px;
 }
 
@@ -101,13 +119,34 @@ form {
 input[type="text"]
 {
     background: transparent;
+    color: white;
+    width: 300px;
+    padding: 12px 20px;
     border: 1px solid grey;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
+/* input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
 
 button{
   background: transparent;
-  background-color: transparent;
+  color: white;
   display: block;
+  padding: 12px 60px;
+  width: 300px;
+  background-color: #2B9DC1;
+  border: none;
+  border-radius: 4px;
 }
 
 footer {
@@ -134,4 +173,70 @@ footer {
   color: white;
   float: right;
   padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-menu {
+    display: none;
+  }
+
+  .content-container{
+    /* border: 1px red solid; */
+    margin-top: 10%;
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .content{
+    float: none !important;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 150px;
+    width: 300px;
+    display: inline-block !important;
+  }
+
+  h3{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    word-wrap: break-word;
+  }
+
+  .signup{
+    width: 300px;
+    height:200px;
+    /* border: 1px yellow solid; */
+    padding-right: 10%;
+    display: inline-block !important;
+  }
+
+  .signup.right{
+    float: none !important;
+  }
+
+  .copyright{
+    font-size: .5rem;
+  }
+
+  .bottom-menu{
+    padding-right: 20px;
+    font-size: .4rem;
+  }
+
+  .bottom-menu a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding: 15px;
+  }
+
+  footer {
+     bottom:0;
+     /* width: 100%; */
+     height:60px;   /* Height of the footer */
+     margin-top: 300px;
+     display: inline-block !important;
+     left: 0;
+  }
 }
